@@ -1,0 +1,15 @@
+<div class="container">
+    <div *ngFor="let customer of customerList">
+        <a [routerLink]="['/customers/view',customer._id]"><p>{{customer._id}}</p></a>
+        <p>{{customer.firstName}}</p>
+        <p>{{customer.lastName}}</p>
+        <p>{{customer.email}}</p>
+        <p>{{customer.phone}}</p>
+        <p>{{customer.dob}}</p>
+        <p>{{customer.department}}</p>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+</div>
